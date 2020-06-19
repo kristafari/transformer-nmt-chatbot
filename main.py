@@ -41,7 +41,7 @@ class Chatbot(object):
     else:
       self.storage_path = "./"
     
-    if config["ckpt_path"] != None:
+    if 'ckpt_path' in config and config["ckpt_path"] != None:
       self.ckpt_path = config["ckpt_path"]
     else:
       self.ckpt_path = "./"
